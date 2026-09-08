@@ -98,7 +98,7 @@ namespace MDFe.Classes.Informacoes
         /// 2 - Data e hora de emissão do Manifesto 
         /// </summary>
         [XmlIgnore]
-        public DateTime DhEmi { get; set; }
+        public DateTimeOffset DhEmi { get; set; }
 
         /// <summary>
         /// Proxy para dhEmi
@@ -119,7 +119,7 @@ namespace MDFe.Classes.Informacoes
                 }
 
             }
-            set { DhEmi = DateTime.Parse(value); }
+            set { DhEmi = DateTimeOffset.Parse(value); }
         }
 
         /// <summary>
@@ -188,7 +188,7 @@ namespace MDFe.Classes.Informacoes
         /// 2 - Data e hora previstos de inicio da viagem
         /// </summary>
         [XmlIgnore]
-        public DateTime? DhIniViagem { get; set; }
+        public DateTimeOffset? DhIniViagem { get; set; }
 
         /// <summary>
         /// Proxy para dhIniViagem
